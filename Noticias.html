@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Web de Notícias e Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>📰 Crypto News Brasil</h2>
+    <p>Cadastro, login e notícias em uma única plataforma</p>
+  </header>
+
+  <main class="container">
+    <section class="auth-grid">
+      <div class="panel">
+        <h3>📝 Cadastrar</h3>
+        <form id="register-form">
+          <input type="text" id="register-name" placeholder="Seu nome" required>
+          <input type="email" id="register-email" placeholder="Seu e-mail" required>
+          <input type="password" id="register-password" placeholder="Sua senha" required>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h3>🔐 Entrar</h3>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Seu e-mail" required>
+          <input type="password" id="login-password" placeholder="Sua senha" required>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div id="user-status" class="status-box">Faça login para acessar a área completa.</div>
+      <button id="btn-ver-mais" type="button">🌎 Ver mais no Google</button>
+      <div id="news-list"></div>
+    </section>
+  </main>
+
+  <script src="noticias.js"></script>
+</body>
+</html>
